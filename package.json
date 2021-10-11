@@ -1,0 +1,24 @@
+{
+  "name": "nis",
+  "version": "1.0.0",
+  "description": "Nautilus Integrated Solutions",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opuscule/nis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opuscule/nis/issues"
+  },
+  "homepage": "https://github.com/opuscule/nis#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
