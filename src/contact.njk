@@ -1,0 +1,15 @@
+---
+titleTag: Contact PRL Industries
+pageName: Contact
+description: PRL, Inc.
+layout: 'base.njk'
+---
+  <h1>{{ pageName }}</h1>
+  <p>address(es), phone, email</p>
+  <form name="contact" method="POST" data-netlify="true">
+    <p><label>Your Name: <input type="text" name="name" /></label></p>
+    <p><label>Your Email: <input type="email" name="email" /></label></p>
+    <p><label>Message: <textarea name="message"></textarea></label></p>
+    <p><button type="submit">Send</button></p>
+  </form>
+  
