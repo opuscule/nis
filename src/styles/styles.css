@@ -1,2 +1,6 @@
 body,h1 { font-family: sans-serif; } 
 p { font-family: Arial, Helvetica, sans-serif; }
+
+.topNav { background-size: cover; background-position: center center; }
+.navbar-brand img { filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); }
+.homeCap { background-image: url('/images/placeholder-landscape.jpg'); }
