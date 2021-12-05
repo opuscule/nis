@@ -1,18 +1,37 @@
 
 :root {
 	--darkTeal:#03465b;
+	--orangecta: #f2663e;
 }
 
-body,h1 { font-family: sans-serif; } 
-p { font-family: Arial, Helvetica, sans-serif; }
+body,h1, h2, h3, h4, h5, h6, p, ul, ol, li { font-family: 'Manrope', sans-serif; } 
+
+h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; color: #8d8d8d; }
 
 .topNav { background-size: cover; background-position: center center; }
 .navbar-brand img { filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); }
 .homeCap { background-image: url('/images/placeholder-landscape.jpg'); }
 
+.btn-primary { background-color: var(--orangecta); border-color: var(--orangecta); }
+
+.mainSep { background-color: var(--orangecta); opacity: 1; }
+
+.liteCallout { background-color: rgba(216,226,231,0.25); padding: 2em 2em 1.4em 2em; }
+
+.twoColE { display: grid; grid-template-columns: 1fr 1fr; }
+.tceImg { background-size: cover; background-position: center center; }
+.tceContent { background-color: var(--darkTeal); padding: 4em 12%; }
+	.tceContent h2 { font-size: 2.25em; color: #fff; font-weight: 500; }
+	.tceContent h5 { color: #c6c6c6; font-size: 1.12em;font-weight: 900; }
+	.tceContent p { color: #fff; }
+
+.raqcallout { background-image: url('/images/placeholder.jpeg'); background-size: cover; background-position: center center; }
+
 /* === FOOTER === */
 footer { background-color: var(--darkTeal); }
+.footerNISicon { fill:#d8e2e7; width: 2.2em; }
 .footerDoc { color: #FFF;  }
 .footerLinks { margin: 0; padding: 0; list-style-type: none; }
 	.footerLinks li { display: inline-block; }
 		.footerLinks li a { color: #FFF; }
+.footerLI { fill:#d8e2e7; width: 2.1em; }
