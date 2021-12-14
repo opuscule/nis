@@ -29,8 +29,13 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 
 /* === ABOUT US === */
 .aboutmvp { background-color: #03465b; }
-.amvpeach { background-color: #013647; }
+.amvpeach { background-color: #013647; padding: 2.1em 1.85em 1.4em; }
+.amvIcon { fill: var(--orangecta); max-width: 90px; }
 	.amvpeach h4, .amvpeach p { color: #FFF; }
+	
+.aboutJoin h1, .aboutJoin p { color: #FFF; }	
+.no-webp .aboutJoin { background-image: url("/images/join-team-bg.jpeg"); }
+.webp .aboutJoin{ background-image: url("/images/join-team-bg.webp"); }
 
 /* === FOOTER === */
 footer { background-color: var(--darkTeal); }
