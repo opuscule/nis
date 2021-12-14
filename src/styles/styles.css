@@ -27,6 +27,11 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 
 .raqcallout { background-image: url('/images/placeholder.jpeg'); background-size: cover; background-position: center center; }
 
+/* === ABOUT US === */
+.aboutmvp { background-color: #03465b; }
+.amvpeach { background-color: #013647; }
+	.amvpeach h4, .amvpeach p { color: #FFF; }
+
 /* === FOOTER === */
 footer { background-color: var(--darkTeal); }
 .footerNISicon { fill:#d8e2e7; width: 2.2em; }
