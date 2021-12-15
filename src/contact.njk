@@ -5,17 +5,65 @@ description: PRL, Inc.
 layout: 'base.njk'
 ---
 
+<!--   <h1>{{ pageName }}</h1> -->
 <div class="container">
-<div class="row">
-  <div class="col">
-  <h1>{{ pageName }}</h1>
-  <p>address(es), phone, email</p>
-  <form name="contact" method="POST" data-netlify="true">
-    <p><label>Your Name: <input type="text" name="name" /></label></p>
-    <p><label>Your Email: <input type="email" name="email" /></label></p>
-    <p><label>Message: <textarea name="message"></textarea></label></p>
-    <p><button type="submit">Send</button></p>
-  </form>
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>Contact us today.<br>We're happy to help.</h1>
+      <hr class="mainSep" size="4" />
+      <p>We are here to help you understand our industry and help you make the right decisions. PRL values your confidentiality and rest assured we will not give out your information to any outside sources and you can opt out at any time. We thank you and we promise to get back to you promptly.</p>
+      <div class="calloutHQ">
+        <h2>PRL Headquarters</h2>
+        <div class="chqContact">
+          <div class="chqAddress"><p>64 Rexmont Road<br>Cornwall, PA 17016</p></div>
+          <div class="chqNumbers"><p>Call: <a href="tel:+17172736787">717.273.6787</a><br>Fax: 717.273.0000</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h2>Have a question? Send us an email.</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-floating mb-3">
+              <input class="form-control" id="fiFirstName" type="text" name="firstname" placeholder="First Name" />
+              <label for="fiFirstName">First Name</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-floating mb-3">
+              <input class="form-control" id="fiLastName" type="text" name="lastname" placeholder="Last Name" />
+            <label for="fiLastName">Last Name</label>
+            </div>
+          </div>
+        </div>
+         <div class="form-floating mb-3">
+           <input type="email" class="form-control" id="fiEmail" placeholder="Email Address">
+           <label for="fiEmail">Email address</label>
+         </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="fiPhone" type="tel" name="phone" placeholder="Phone" />
+          <label for="fiPhone">Phone</label>
+        </div>
+        
+        <div class="form-floating mb-3">
+            
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label for="floatingSelect">Works with selects</label>
+        </div>
+
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Your message" id="fiMessage" style="height: 100px"></textarea>
+              <label for="fiMessage">Your message</label>
+        </div>
+
+        <p><button type="submit">Send a Message</button></p>
+      </form>
+    </div>
   </div>
-</div>
 </div>
