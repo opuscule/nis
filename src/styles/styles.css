@@ -18,6 +18,21 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 
 .liteCallout { background-color: rgba(216,226,231,0.25); padding: 2em 2em 1.4em 2em; }
 
+main ul { list-style-type: none; }
+main ul li::before { display:inline-block; 
+	
+	  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNSIgY3k9IjUiIHI9IjQuNSIgc3Ryb2tlPSIjRjI2NjNFIi8+Cjwvc3ZnPgo=");
+	   background-size: 10px 10px;
+	   height: 10px;
+	   width: 10px;
+	   margin-left: -1.4em;
+		   margin-top: -0.035em;
+		   position: absolute;
+	 }
+
+
+
+
 .twoColE { display: grid; grid-template-columns: 1fr 1fr; }
 .tceImg { background-size: cover; background-position: center center; }
 .tceContent { background-color: var(--darkTeal); padding: 4em 12%; }
@@ -26,6 +41,17 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 	.tceContent p { color: #fff; }
 
 .raqcallout { background-image: url('/images/placeholder.jpeg'); background-size: cover; background-position: center center; }
+
+/* === CAPABILITIES === */
+#v-pills-tab { min-width: 23.3em; }
+#v-pills-tab .nav-link { background-color: rgba(216,226,231,0.35); text-align: left; color: var(--darkTeal);  font-weight: 500; }
+	#v-pills-tab .nav-link.active { background-color: var(--orangecta); color: #fff; }
+.capCallout { background-color: rgba(216,226,231,0.45); }
+.capCalloutIcon { width: 8em; fill:#f2663e; }
+
+.afRaQ h1, .afRaQ p { color: #FFF; }
+.no-webp .afRaQ { background-image: url("/images/join-team-bg.jpeg"); }
+.webp .afRaQ { background-image: url("/images/join-team-bg.webp"); }
 
 /* === ABOUT US === */
 .aboutmvp { background-color: #03465b; }
@@ -42,10 +68,11 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 .chqContact { display:grid; grid-template-columns: auto auto; }
 
 /* === FOOTER === */
-footer { background-color: var(--darkTeal); }
+footer#footer { background-color: var(--darkTeal); }
 .footerNISicon { fill:#d8e2e7; width: 2.2em; }
 .footerDoc { color: #FFF;  }
-.footerLinks { margin: 0; padding: 0; list-style-type: none; }
+.footerLinkCol { text-align: right; }
+.footerLinks { margin: 0; padding: 0; list-style-type: none; display: inline-block; }
 	.footerLinks li { display: inline-block; }
 		.footerLinks li a { color: #FFF; }
 .footerLI { fill:#d8e2e7; width: 2.1em; }
