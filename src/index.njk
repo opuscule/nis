@@ -7,64 +7,54 @@ layout: 'base.njk'
 ---
   
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1>{{ pageName }}</h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>{{ pageName }}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <hr class="mainSep" size="4" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 liteCalloutWrapper text-center">
+      <div class="liteCallout">
+        <h3>Difference One</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam nonu eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+      </div>
+    </div>
+    <div class="col-sm-4 liteCalloutWrapper text-center">
+      <div class="liteCallout">
+        <h3>Difference One</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam nonu eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
       </div>
     </div>
   </div>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <hr class="mainSep" size="4" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 liteCalloutWrapper text-center">
-        <div class="liteCallout">
-          <h3>Difference One</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam nonu eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
-        </div>
-      </div>
-      <div class="col-sm-4 liteCalloutWrapper text-center">
-        <div class="liteCallout">
-          <h3>Difference One</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam nonu eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
-        </div>
-      </div>
+</div>
+
+<section class="twoColE">
+  <div class="tceImg" style="background-image:url('./images/placeholder.jpeg')"></div>
+  <div class="tceContent text-center">
+    <h5>&mdash; ABOUT US &mdash;</h5>
+    <h2>Lorem ipsum dolor sit</h2>
+    <p>Not only does PRL deliver the highest quality machined castings, but we're also trusted partners of our customers. PRL's parts must perform under some of the most demanding conditions on earth. We're a proud member of Nautilus Integrated Solutions - a best-in-class enterprise serving the United States Navy, nuclear power, and railroad industries. Vice Admiral John Morgan (USN, ret.), President &amp; CEO of NIS, serves as the Chief Executive Officer of Nautilus's platform companies.</p>
+    <p><a href="/" class="btn btn-primary">Learn More</a></p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 offset-sm-1 text-center">
+      <h5 class="subTitle">&mdash; Certifications &mdash;</h5>
+      <h1>When you're dedicated to precision, organizations reward you.</h1>
+      <p>PRL's expertise and commitment to precision has resulted in us being awarded multiple certifications by the following associations:</p>
     </div>
   </div>
-  
-  <section class="twoColE">
-    <div class="tceImg" style="background-image:url('./images/placeholder.jpeg')"></div>
-    <div class="tceContent text-center">
-      <h5>&mdash; ABOUT US &mdash;</h5>
-      <h2>Lorem ipsum dolor sit</h2>
-      <p>Not only does PRL deliver the highest quality machined castings, but we're also trusted partners of our customers. PRL's parts must perform under some of the most demanding conditions on earth. We're a proud member of Nautilus Integrated Solutions - a best-in-class enterprise serving the United States Navy, nuclear power, and railroad industries. Vice Admiral John Morgan (USN, ret.), President &amp; CEO of NIS, serves as the Chief Executive Officer of Nautilus's platform companies.</p>
-      <p><a href="/" class="btn btn-primary">Learn More</a></p>
-    </div>
-  </section>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-10 offset-sm-1 text-center">
-        <h5 class="subTitle">&mdash; Certifications &mdash;</h5>
-        <h1>When you're dedicated to precision, organizations reward you.</h1>
-        <p>PRL's expertise and commitment to precision has resulted in us being awarded multiple certifications by the following associations:</p>
-      </div>
-    </div>
-  </div>
-  
-  <section class="raqcallout">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 offset-sm-2 text-center">
-          <h2>Find out more about we can do for you.</h2>
-          <p>We'd love to start a conversation about how we can help deliver the mission-critical components you need. Simply request a quote with your specifications and we'll get right back to you. Thank you.</p>
-          <p><a href="/" class="btn btn-primary">Request A Quote</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
+
+{% include './_includes/raq.njk' %}
