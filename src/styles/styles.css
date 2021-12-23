@@ -2,21 +2,28 @@
 :root {
 	--darkTeal:#03465b;
 	--orangecta: #f2663e;
+	--footerHoverColor: #ffc953;
 }
 
-body,h1, h2, h3, h4, h5, h6, p, ul, ol, li { font-family: 'Manrope', sans-serif; } 
+body,h1, h2, h3, h4, h5, h6, p, ul, ol, li { font-family: 'Manrope', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 { color: var(--darkTeal); }
 
 h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; color: #8d8d8d; }
 
-.topNav { background-size: cover; background-position: center center; }
+.topNav { background-size: cover; background-position: center center; min-height: 50vh; border-bottom: 1em solid var(--darkTeal); }
 .navbar-brand img { filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); }
 .homeCap { background-image: url('/images/placeholder-landscape.jpg'); }
 
-.btn-primary { background-color: var(--orangecta); border-color: var(--orangecta); }
+.navbar-nav .nav-item a { color: #FFF; text-decoration: none; }
+
+.btn-primary { background-color: var(--orangecta); border-color: var(--orangecta); border-width: 2px; }
+.btn-primary:hover { background-color: rgba(255,255,255,0); border-color: var(--orangecta); color: var(--orangecta); }
+.btnondark.btn-primary:hover { color: #FFF; }
 
 .mainSep { background-color: var(--orangecta); opacity: 1; }
 
-.liteCallout { background-color: rgba(216,226,231,0.25); padding: 2em 2em 1.4em 2em; }
+
 
 main ul { list-style-type: none; }
 main ul li::before { display:inline-block; 
@@ -42,7 +49,14 @@ main ul li::before { display:inline-block;
 
 .raqcallout { background-image: url('/images/placeholder.jpeg'); background-size: cover; background-position: center center; }
 
+/* === HOME === */
+.liteCallout { background-color: rgba(216,226,231,0.25); padding: 2em 2em 1.4em 2em; }
+.liteCallout svg { fill:var(--orangecta); max-width: 6.25em; }
+.liteCallout h3 { font-size: 1.125em; color: var(--darkTeal); font-weight: 700; }
+
 /* === CAPABILITIES === */
+.no-webp .capabilitiesCap { background-image: url("/images/placeholder.jpeg"); }
+.webp .capabilitiesCap { background-image: url("/images/placeholder.jpeg"); }
 #v-pills-tab { min-width: 23.3em; }
 #v-pills-tab .nav-link { background-color: rgba(216,226,231,0.35); text-align: left; color: var(--darkTeal);  font-weight: 500; }
 	#v-pills-tab .nav-link.active { background-color: var(--orangecta); color: #fff; }
@@ -53,7 +67,13 @@ main ul li::before { display:inline-block;
 .no-webp .afRaQ { background-image: url("/images/join-team-bg.jpeg"); }
 .webp .afRaQ { background-image: url("/images/join-team-bg.webp"); }
 
+/* === CERTIFICATIONS === */
+.no-webp .certificationsCap { background-image: url("/images/placeholder.jpeg"); }
+.webp .certificationsCap { background-image: url("/images/placeholder.jpeg"); }
+
 /* === ABOUT US === */
+.no-webp .aboutCap { background-image: url("/images/placeholder.jpeg"); }
+.webp .aboutCap { background-image: url("/images/placeholder.jpeg"); }
 .aboutmvp { background-color: #03465b; }
 .amvpeach { background-color: #013647; padding: 2.1em 1.85em 1.4em; }
 .amvIcon { fill: var(--orangecta); max-width: 90px; }
@@ -73,6 +93,12 @@ footer#footer { background-color: var(--darkTeal); }
 .footerDoc { color: #FFF;  }
 .footerLinkCol { text-align: right; }
 .footerLinks { margin: 0; padding: 0; list-style-type: none; display: inline-block; }
-	.footerLinks li { display: inline-block; }
-		.footerLinks li a { color: #FFF; }
+	.footerLinks li { display: inline-block; margin-right: 1em;
+		position: relative;
+		border-right: 1px solid var(--orangecta);
+		padding-right: 1em;
+		line-height: 1; }
+		.footerLinks li:last-child { padding-right: 0; margin-right: 1.5em; border-right: none; }
+		.footerLinks li a { color: #FFF; text-decoration: none; transition: all 0.3s ease-out; }
+			.footerLinks li a:hover { color: var(--footerHoverColor); }
 .footerLI { fill:#d8e2e7; width: 2.1em; }
