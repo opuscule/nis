@@ -83,6 +83,10 @@ main ul li::before { display:inline-block;
 .no-webp .aboutJoin { background-image: url("/images/join-team-bg.jpeg"); }
 .webp .aboutJoin{ background-image: url("/images/join-team-bg.webp"); }
 
+/* === FACILITIES === */
+.no-webp .facilitiesCap { background-image: url("/images/placeholder.jpeg"); }
+.webp .facilitiesCap { background-image: url("/images/placeholder.jpeg"); }
+
 /* === CONTACT US === */
 .calloutHQ { background-color: rgba(216,226,231,0.45); padding: 1.4em; }
 .chqContact { display:grid; grid-template-columns: auto auto; }
