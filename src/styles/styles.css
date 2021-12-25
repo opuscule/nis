@@ -49,6 +49,20 @@ main ul li::before { display:inline-block;
 
 .raqcallout { background-image: url('/images/placeholder.jpeg'); background-size: cover; background-position: center center; }
 
+
+/* === FORMS === */
+.form-control { border-color:#d5d5d5; }
+.form-floating>.form-control, .form-floating>.form-select { height: calc(3rem + 2px);  }
+.form-floating>label { color: #5e5e5e; padding: 0.75rem;  }
+.form-control:focus { box-shadow: none; border-color: var(--orangecta); }
+.form-floating>.form-control:focus~label, 
+.form-floating>.form-control:not(:placeholder-shown)~label, 
+.form-floating>.form-select~label { opacity: 1; color: var(--orangecta); transform: scale(.75) translateY(-0.55rem) translateX(1.25rem);
+	background-color: white;
+	padding: 0 0.5rem;
+	line-height: 1;
+	height: 1.75em; }
+
 /* === HOME === */
 .liteCallout { background-color: rgba(216,226,231,0.25); padding: 2em 2em 1.4em 2em; }
 .liteCallout svg { fill:var(--orangecta); max-width: 6.25em; }
@@ -86,6 +100,10 @@ main ul li::before { display:inline-block;
 /* === FACILITIES === */
 .no-webp .facilitiesCap { background-image: url("/images/placeholder.jpeg"); }
 .webp .facilitiesCap { background-image: url("/images/placeholder.jpeg"); }
+
+/* === REQUEST A QUOTE === */
+.no-webp .raqCap { background-image: url("/images/placeholder.jpeg"); }
+.webp .raqCap { background-image: url("/images/placeholder.jpeg"); }
 
 /* === CONTACT US === */
 .calloutHQ { background-color: rgba(216,226,231,0.45); padding: 1.4em; }
