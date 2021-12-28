@@ -68,6 +68,14 @@ main ul li::before { display:inline-block;
 .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) { padding-top:1rem; }
 
 /* === HOME === */
+.topNav.homeCap { border-bottom: none; min-height: 100vh; display: grid; align-content: space-between; }
+.no-webp .homeCap { background-image: url("/images/placeholder.jpeg"); }
+.webp .homeCap { background-image: url("/images/placeholder.jpeg"); }
+.homeNISicon { fill:rgba(209,209,209,0.75); max-width: 4.25em; display: block; margin-right: 0.7em; margin-left: auto; }
+.hbct { color: rgba(255,255,255,0.75); font-weight: 700; font-size: 1.25em; background-color: rgba(3,70,91,0.85); display: inline-block; margin: 0; border-top:8px solid var(--orangecta); }
+.homeBannerCallout { background-color: rgba(3,70,91,0.85); }
+	.homeBannerCallout h3 { color: #FFF; font-size: 1.18em; line-height: 1.6; }
+		.homeBannerCallout h3 a { color: #FFF; }
 .liteCallout { background-color: rgba(216,226,231,0.25); padding: 2em 2em 1.4em 2em; }
 .liteCallout svg { fill:var(--orangecta); max-width: 6.25em; }
 .liteCallout h3 { font-size: 1.125em; color: var(--darkTeal); font-weight: 700; }
