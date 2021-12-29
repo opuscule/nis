@@ -15,7 +15,9 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 .navbar-brand img { filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); }
 .homeCap { background-image: url('/images/placeholder-landscape.jpg'); }
 
-.navbar-nav .nav-item a { color: #FFF; text-decoration: none; }
+.navbar-nav .nav-item a { color: #FFF; text-decoration: none; padding: 4px 0; }
+
+.navbar-nav .nav-item.active a { border-bottom: 3px solid var(--orangecta); color: var(--orangecta); }
 
 .btn-primary { background-color: var(--orangecta); border-color: var(--orangecta); border-width: 2px; }
 .btn-primary:hover { background-color: rgba(255,255,255,0); border-color: var(--orangecta); color: var(--orangecta); }
@@ -67,6 +69,8 @@ main ul li::before { display:inline-block;
 
 .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) { padding-top:1rem; }
 
+.btn { padding: 0.5rem 1.25rem; }
+
 /* === HOME === */
 .topNav.homeCap { border-bottom: none; min-height: 100vh; display: grid; align-content: space-between; }
 .no-webp .homeCap { background-image: url("/images/placeholder.jpeg"); }
@@ -88,6 +92,13 @@ main ul li::before { display:inline-block;
 	#v-pills-tab .nav-link.active { background-color: var(--orangecta); color: #fff; }
 .capCallout { background-color: rgba(216,226,231,0.45); }
 .capCalloutIcon { width: 8em; fill:#f2663e; }
+
+.capsItemsdt { display: none; }
+.capsItemsm { display: block; }
+@media (min-width:768px) {
+	.capsItemsdt { display: block; }
+	.capsItemsm { display: none; }
+}
 
 .afRaQ h1, .afRaQ p { color: #FFF; }
 .no-webp .afRaQ { background-image: url("/images/join-team-bg.jpeg"); }
@@ -120,7 +131,10 @@ main ul li::before { display:inline-block;
 /* === CONTACT US === */
 .no-webp .contactCap { background-image: url("/images/placeholder.jpeg"); }
 .webp .contactCap { background-image: url("/images/placeholder.jpeg"); }
-.calloutHQ { background-color: rgba(216,226,231,0.45); padding: 1.4em; }
+.contactWrapper h1 { font-size: 2.25em; }
+.contactUsMsg { font-size:1.25em; }
+.calloutHQ { background-color: rgba(216,226,231,0.45); }
+.contactWrapper h2 { font-size: 1.5em; }
 .chqContact { display:grid; grid-template-columns: auto auto; }
 
 /* === FOOTER === */

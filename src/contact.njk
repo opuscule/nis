@@ -6,31 +6,31 @@ pageClass: contactCap
 layout: 'base.njk'
 ---
 
-<div class="container">
+<div class="contactWrapper container py-5">
   <div class="row">
-    <div class="col-md-6">
-      <h1>Contact us today.<br>We're happy to help.</h1>
-      <hr class="mainSep" size="4" />
-      <p>We are here to help you understand our industry and help you make the right decisions. PRL values your confidentiality and rest assured we will not give out your information to any outside sources and you can opt out at any time. We thank you and we promise to get back to you promptly.</p>
-      <div class="calloutHQ">
+    <div class="col-md-6 pe-md-5">
+      <h1 class="mb-4 pb-2">Contact us today.<br>We're happy to help.</h1>
+      <hr class="mainSep" size="6" />
+      <p class="contactUsMsg pt-3">We are here to help you understand our industry and help you make the right decisions. PRL values your confidentiality and rest assured we will not give out your information to any outside sources and you can opt out at any time. We thank you and we promise to get back to you promptly.</p>
+      <div class="calloutHQ p-md-5 my-md-5 p-sm-4 my-sm-3">
         <h2>PRL Headquarters</h2>
-        <div class="chqContact">
+        <div class="chqContact mt-4">
           <div class="chqAddress"><p>64 Rexmont Road<br>Cornwall, PA 17016</p></div>
           <div class="chqNumbers"><p>Call: <a href="tel:+17172736787">717.273.6787</a><br>Fax: 717.273.0000</p></div>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <h2>Have a question? Send us an email.</h2>
+    <div class="col-md-6 ps-md-5">
+      <h2 class="mb-4">Have a question? Send us an email.</h2>
       <form name="contact" method="POST" data-netlify="true" id="formnis">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="form-floating mb-3">
               <input class="form-control" id="fiFirstName" type="text" name="firstname" placeholder="First Name" required />
               <label for="fiFirstName">First Name</label>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="form-floating mb-3">
               <input class="form-control" id="fiLastName" type="text" name="lastname" placeholder="Last Name" required />
             <label for="fiLastName">Last Name</label>
@@ -49,12 +49,12 @@ layout: 'base.njk'
         <div class="form-floating mb-3">
             
             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option selected>Please select one</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Careers & Benefits">Careers &amp; Benefits</option>
+              <option value="Customer Service">Customer Service</option>
             </select>
-            <label for="floatingSelect">Works with selects</label>
+            <label for="floatingSelect">Please select one</label>
         </div>
 
             <div class="form-floating">
@@ -62,7 +62,7 @@ layout: 'base.njk'
               <label for="fiMessage">Your message</label>
         </div>
 
-        <p><button type="submit">Send a Message</button></p>
+        <p><button type="submit" class="btn btn-primary my-4">Send a Message</button></p>
       </form>
     </div>
   </div>
