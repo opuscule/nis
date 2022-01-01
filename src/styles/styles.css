@@ -40,15 +40,6 @@ main ul li::before { display:inline-block;
 	 }
 
 
-
-
-.twoColE { display: grid; grid-template-columns: 1fr 1fr; }
-.tceImg { background-size: cover; background-position: center center; }
-.tceContent { background-color: var(--darkTeal); padding: 4em 12%; }
-	.tceContent h2 { font-size: 2.25em; color: #fff; font-weight: 500; }
-	.tceContent h5 { color: #c6c6c6; font-size: 1.12em;font-weight: 900; }
-	.tceContent p { color: #fff; }
-
 .raqcallout { background-image: url('/images/placeholder.jpeg'); background-size: cover; background-position: center center; }
 
 
@@ -69,12 +60,28 @@ main ul li::before { display:inline-block;
 
 .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) { padding-top:1rem; }
 
-.btn { padding: 0.5rem 1.25rem; font-weight: 500; font-size: 1.125rem; }
+.btn { padding: 0.5rem 1.45rem; font-weight: 500; font-size: 1.125rem; }
 
 /* === HOME === */
 .topNav.homeCap { border-bottom: none; min-height: 100vh; display: grid; align-content: space-between; }
 .no-webp .homeCap { background-image: url("/images/placeholder.jpeg"); }
 .webp .homeCap { background-image: url("/images/placeholder.jpeg"); }
+
+.homeLeadIn h1 { font-size: 2.25em; font-weight: 500; }
+
+.twoColE { display: grid; grid-template-columns: 1fr 1fr; }
+.no-webp .tceImg { background-image: url("/images/placeholder.jpeg"); }
+.webp .tceImg { background-image: url("/images/placeholder.jpeg"); }
+.tceImg { background-size: cover; background-position: center center; }
+.tceContent { background-color: var(--darkTeal); padding: 4em 12%; }
+	.tceContent h2 { font-size: 2.25em; color: #fff; font-weight: 500; }
+	.tceContent h5 { color: #c6c6c6; font-size: 1.12em;font-weight: 900; }
+	.tceContent p { color: #fff; }
+	
+@media screen and (max-width:768px) {
+	.twoColE { grid-template-columns: auto; grid-template-rows: 35vh auto; }
+}
+
 .homeNISicon { fill:rgba(209,209,209,0.75); max-width: 4.25em; display: block; margin-right: 0.7em; margin-left: auto; }
 .hbct { color: rgba(255,255,255,0.75); font-weight: 700; font-size: 1.25em; background-color: rgba(3,70,91,0.85); display: inline-block; margin: 0; border-top:8px solid var(--orangecta); }
 .homeBannerCallout { background-color: rgba(3,70,91,0.85); }
@@ -84,14 +91,35 @@ main ul li::before { display:inline-block;
 .liteCallout svg { fill:var(--orangecta); max-width: 6.25em; }
 .liteCallout h3 { font-size: 1.125em; color: var(--darkTeal); font-weight: 700; }
 
-.homeCerts img { max-width: 7.5em; }
+.homeCerts img { max-width: 7.5em; margin-bottom: 1em; }
+.homeCerts p { line-height: 1.25; font-size: 0.9em; }
 
 /* === CAPABILITIES === */
 .no-webp .capabilitiesCap { background-image: url("/images/placeholder.jpeg"); }
 .webp .capabilitiesCap { background-image: url("/images/placeholder.jpeg"); }
 #v-pills-tab { min-width: 23.3em; }
 #v-pills-tab .nav-link { background-color: rgba(216,226,231,0.35); text-align: left; color: var(--darkTeal);  font-weight: 500; }
-	#v-pills-tab .nav-link.active { background-color: var(--orangecta); color: #fff; }
+	#v-pills-tab .nav-link.active,
+	#v-pills-tab .nav-link:hover { background-color: var(--orangecta); color: #fff; }
+	
+	
+#v-pills-tab .nav-link .capArrow {
+  border: solid #b9b9b9;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-right: 1.4em; margin-left: 0.3em;
+  transition: all 0.3s ease;
+}
+#v-pills-tab .nav-link:hover .capArrow { border-color: #FFF; }
+#v-pills-tab .nav-link.active .capArrow {
+	border-color: #fff;
+	transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+}
+
 .capCallout { background-color: rgba(216,226,231,0.45); }
 .capCalloutIcon { width: 8em; fill:#f2663e; }
 
@@ -102,9 +130,7 @@ main ul li::before { display:inline-block;
 	.capsItemsm { display: none; }
 }
 
-.afRaQ h1, .afRaQ p { color: #FFF; }
-.no-webp .afRaQ { background-image: url("/images/join-team-bg.jpeg"); }
-.webp .afRaQ { background-image: url("/images/join-team-bg.webp"); }
+
 
 /* === CERTIFICATIONS === */
 .no-webp .certificationsCap { background-image: url("/images/placeholder.jpeg"); }
@@ -127,8 +153,10 @@ main ul li::before { display:inline-block;
 .webp .facilitiesCap { background-image: url("/images/placeholder.jpeg"); }
 
 /* === REQUEST A QUOTE === */
-.no-webp .raqCap { background-image: url("/images/placeholder.jpeg"); }
-.webp .raqCap { background-image: url("/images/placeholder.jpeg"); }
+.afRaQ h1 { font-size: 1.875em; color: #FFF; }
+.afRaQ p { color: #FFF; }
+.no-webp .afRaQ { background-image: url("/images/join-team-bg.jpeg"); }
+.webp .afRaQ { background-image: url("/images/join-team-bg.webp"); }
 
 /* === CONTACT US === */
 .no-webp .contactCap { background-image: url("/images/placeholder.jpeg"); }
@@ -142,7 +170,8 @@ main ul li::before { display:inline-block;
 /* === FOOTER === */
 footer#footer { background-color: var(--darkTeal); }
 .footerNISicon { fill:#d8e2e7; width: 2.2em; }
-.footerDoc { color: #FFF;   }
+.footerDoc { color: #FFF; }
+	.footerDoc a { color: #FFF; text-decoration: underline; font-weight: 500; }
 .footerLinkCol { text-align: right; }
 .footerLinks { margin: 0; padding: 0; list-style-type: none; display: inline-block; }
 	.footerLinks li { display: inline-block; margin-right: 1em;
