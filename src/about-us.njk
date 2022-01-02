@@ -6,17 +6,14 @@ description: "Looking for sand castings for military and nuclear industry applic
 layout: 'base.njk'
 ---
 
-<!--   <h1>{{ pageName }}</h1> -->
-
-
-<section class="container">
+<section class="container contentLeadIn my-5">
   <div class="row">
-    <div class="col-md-6">
-      <h2>PRL is proud to be an American company dedicated to supplying some of America’s most important customers.</h2>
-      <hr class="mainSep" />
+    <div class="col-md-6 pe-md-5">
+      <h1>PRL is proud to be an American company dedicated to supplying some of America’s most important customers.</h1>
+      <hr class="mainSep" size="6" />
       <p>PRL is dedicated to serving customers working to defend America. We understand the importance of delivering castings and machined components where failure is not an option.</p>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 ps-md-5">
       <p>This has been our philosophy for over 40 years. Our company has multiple facilities with overlapping capabilities. Our financial status is healthy – we’re backed by strong investors who believe in our management philosophy. We engage in cross training programs for critical roles to ensure your needs are always met.</p>
       <p>Our history of success has enabled us to create and maintain a strong network of vendors, suppliers, and subcontractors.</p>        
     </div>
@@ -24,7 +21,7 @@ layout: 'base.njk'
 </section>
 
 <section class="aboutmvp">
-  <div class="container">
+  <div class="container py-5">
     <div class="row">
       <div class="col-md-4 text-center d-flex align-items-stretch">
         <div class="amvpeach">
@@ -52,7 +49,7 @@ layout: 'base.njk'
 </section>
 
 <section>
-  <div class="container">
+  <div class="container my-5">
     <div class="row">
       <div class="col-md-8 offset-md-2 text-center">
         <h1>Lorem ipsum dolor sit amet consectetur</h1>
@@ -61,16 +58,39 @@ layout: 'base.njk'
     </div>
     <div class="row">
       <div class="col">
-        <hr class="mainSep" />
+        <hr class="mainSep" size="6" />
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container mb-5">
     <div class="row">
       <div class="col-md-3">
-        <a href="#">
-          image
+        <a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal1" class="aboutStaff">
+          <picture>
+            <source srcset="https://via.placeholder.com/500x500.webp?text=Employee+1" type="image/webp">
+            <source srcset="https://via.placeholder.com/500x500.jpg?text=Employee+1" type="image/jpeg"> 
+            <img src="https://via.placeholder.com/500x500.jpg?text=Employee+1"  class="img-fluid" alt="Employee 1">
+          </picture>
+          <div class="aboutStaffTitle">
+            <h4>Employee 1 Name</h4>
+            <h5>Position/Title</h5>
+          </div>
         </a>
+        <!-- Modal -->
+        <div class="modal fade" id="aboutModal1" tabindex="-1" aria-labelledby="aboutLabel1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="aboutLabel1">Employee 1 Name</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis pellentesque metus id lacinia. Nunc dapibus pulvinar auctor. Duis nec sem at orci commodo viverra id in ipsum. Fusce tellus nisl, vestibulum sed rhoncus at, pretium non libero. Cras vel lacus ut ipsum vehicula aliquam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>

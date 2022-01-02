@@ -5,7 +5,7 @@
 	--footerHoverColor: #ffc953;
 }
 
-body,h1, h2, h3, h4, h5, h6, p, ul, ol, li { font-family: 'Manrope', sans-serif; }
+body,h1, h2, h3, h4, h5, h6, p, ul, ol, li { font-family: 'Manrope', sans-serif; color: #5e5e5e; }
 
 h1, h2, h3, h4, h5, h6 { color: var(--darkTeal); }
 
@@ -16,8 +16,9 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 .homeCap { background-image: url('/images/placeholder-landscape.jpg'); }
 
 .navbar-nav .nav-item a { color: #FFF; text-decoration: none; padding: 4px 0; }
-
 .navbar-nav .nav-item.active a { border-bottom: 3px solid var(--orangecta); color: var(--orangecta); }
+
+.navbar-nav .nav-item .btn { padding:0.5em 2em; }
 
 .btn-primary { background-color: var(--orangecta); border-color: var(--orangecta); border-width: 2px; }
 .btn-primary:hover { background-color: rgba(255,255,255,0); border-color: var(--orangecta); color: var(--orangecta); }
@@ -28,6 +29,7 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 
 
 main ul { list-style-type: none; }
+main ul li { margin-bottom: 0.5em; }
 main ul li::before { display:inline-block; 
 	
 	  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNSIgY3k9IjUiIHI9IjQuNSIgc3Ryb2tlPSIjRjI2NjNFIi8+Cjwvc3ZnPgo=");
@@ -94,6 +96,8 @@ main ul li::before { display:inline-block;
 .homeCerts img { max-width: 7.5em; margin-bottom: 1em; }
 .homeCerts p { line-height: 1.25; font-size: 0.9em; }
 
+.contentLeadIn h1 { font-size: 2.25em; }
+
 /* === CAPABILITIES === */
 .no-webp .capabilitiesCap { background-image: url("/images/placeholder.jpeg"); }
 .webp .capabilitiesCap { background-image: url("/images/placeholder.jpeg"); }
@@ -102,7 +106,7 @@ main ul li::before { display:inline-block;
 	#v-pills-tab .nav-link.active,
 	#v-pills-tab .nav-link:hover { background-color: var(--orangecta); color: #fff; }
 	
-	
+.tab-pane h3 { font-size: 1.5em; margin-bottom:1em; }	
 #v-pills-tab .nav-link .capArrow {
   border: solid #b9b9b9;
   border-width: 0 3px 3px 0;
@@ -143,10 +147,17 @@ main ul li::before { display:inline-block;
 .amvpeach { background-color: #013647; padding: 2.1em 1.85em 1.4em; }
 .amvIcon { fill: var(--orangecta); max-width: 90px; }
 	.amvpeach h4, .amvpeach p { color: #FFF; }
+	.amvpeach h4 { font-size:1.125em; margin-top: 1em; margin-bottom: 1em; }
 	
 .aboutJoin h1, .aboutJoin p { color: #FFF; }	
 .no-webp .aboutJoin { background-image: url("/images/join-team-bg.jpeg"); }
 .webp .aboutJoin{ background-image: url("/images/join-team-bg.webp"); }
+
+.aboutStaff { position: relative; }
+.aboutStaff picture { object-fit: cover; }
+.aboutStaffTitle { position: absolute; background-color: var(--darkTeal); width: 100%; padding: 1em; }
+	.aboutStaffTitle h4 { color:#FFF; font-size: 1.15em; font-weight: 600; }
+	.aboutStaffTitle h5 { color:#d8e2e7; font-size: 1em; font-weight: 500; }
 
 /* === FACILITIES === */
 .no-webp .facilitiesCap { background-image: url("/images/placeholder.jpeg"); }
