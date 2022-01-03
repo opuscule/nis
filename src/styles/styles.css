@@ -153,11 +153,26 @@ main ul li::before { display:inline-block;
 .no-webp .aboutJoin { background-image: url("/images/join-team-bg.jpeg"); }
 .webp .aboutJoin{ background-image: url("/images/join-team-bg.webp"); }
 
-.aboutStaff { position: relative; }
-.aboutStaff picture { object-fit: cover; }
-.aboutStaffTitle { position: absolute; background-color: var(--darkTeal); width: 100%; padding: 1em; }
+.aboutStaff { position: relative; display: grid; text-decoration: none; background-position: center center; background-size: cover; aspect-ratio: 1; align-content: space-between; transition:all 0.2s ease; background-color: rgb( 3 70 91 / 0 ); }
+.aboutStaff:hover { background-color: rgb( 3 70 91 / .75 ); background-blend-mode: darken; }
+
+.no-webp .aboutStaff1 { background-image: url("https://via.placeholder.com/500x500.jpg?text=Employee+1"); }
+.webp .aboutStaff1{ background-image: url("https://via.placeholder.com/500x500.webp?text=Employee+1"); }
+.no-webp .aboutStaff2 { background-image: url("https://via.placeholder.com/500x500.jpg?text=Employee+2"); }
+.webp .aboutStaff2 { background-image: url("https://via.placeholder.com/500x500.webp?text=Employee+2"); }
+.no-webp .aboutStaff3 { background-image: url("https://via.placeholder.com/500x500.jpg?text=Employee+3"); }
+.webp .aboutStaff3 { background-image: url("https://via.placeholder.com/500x500.webp?text=Employee+3"); }
+.no-webp .aboutStaff4 { background-image: url("https://via.placeholder.com/500x500.jpg?text=Employee+4"); }
+.webp .aboutStaff4 { background-image: url("https://via.placeholder.com/500x500.webp?text=Employee+4"); }
+
+.aboutStaffcta { text-align: right; opacity: 0; transition:all 0.3s ease; }
+	.aboutStaffcta h4 { color:#d8e2e7; font-size: 1.15em; font-weight: 600; }
+.asctaar { fill:#d8e2e7; width: 1.5em; }
+.aboutStaffTitle { background-color: var(--darkTeal); width: 100%; padding: 1em; opacity: 0; transition:all 0.3s ease; }
 	.aboutStaffTitle h4 { color:#FFF; font-size: 1.15em; font-weight: 600; }
-	.aboutStaffTitle h5 { color:#d8e2e7; font-size: 1em; font-weight: 500; }
+	.aboutStaffTitle h5 { color:#d8e2e7; font-size: 1em; font-weight: 500; margin-bottom:0; }
+
+.aboutStaff:hover > * { opacity: 1; }
 
 /* === FACILITIES === */
 .no-webp .facilitiesCap { background-image: url("/images/placeholder.jpeg"); }
