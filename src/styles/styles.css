@@ -66,14 +66,14 @@ main ul li::before { display:inline-block;
 
 /* === HOME === */
 .topNav.homeCap { border-bottom: none; min-height: 100vh; display: grid; align-content: space-between; }
-.no-webp .homeCap { background-image: url("/images/placeholder.jpeg"); }
-.webp .homeCap { background-image: url("/images/placeholder.jpeg"); }
+.no-webp .homeCap { background-image: url("/images/home-banner.jpeg"); }
+.webp .homeCap { background-image: url("/images/home-banner.webp"); }
 
 .homeLeadIn h1 { font-size: 2.25em; font-weight: 500; }
 
 .twoColE { display: grid; grid-template-columns: 1fr 1fr; }
-.no-webp .tceImg { background-image: url("/images/placeholder.jpeg"); }
-.webp .tceImg { background-image: url("/images/placeholder.jpeg"); }
+.no-webp .tceImg { background-image: url("/images/home-about.jpeg"); }
+.webp .tceImg { background-image: url("/images/home-about.webp"); }
 .tceImg { background-size: cover; background-position: center center; }
 .tceContent { background-color: var(--darkTeal); padding: 4em 12%; }
 	.tceContent h2 { font-size: 2.25em; color: #fff; font-weight: 500; }
@@ -81,7 +81,7 @@ main ul li::before { display:inline-block;
 	.tceContent p { color: #fff; }
 	
 @media screen and (max-width:768px) {
-	.twoColE { grid-template-columns: auto; grid-template-rows: 35vh auto; }
+	.twoColE { grid-template-columns: auto; grid-template-rows: 45vh auto; }
 }
 
 .homeNISicon { fill:rgba(209,209,209,0.75); max-width: 4.25em; display: block; margin-right: 0.7em; margin-left: auto; }
@@ -99,8 +99,8 @@ main ul li::before { display:inline-block;
 .contentLeadIn h1 { font-size: 2.25em; }
 
 /* === CAPABILITIES === */
-.no-webp .capabilitiesCap { background-image: url("/images/placeholder.jpeg"); }
-.webp .capabilitiesCap { background-image: url("/images/placeholder.jpeg"); }
+.no-webp .capabilitiesCap { background-image: url("/images/capabilities-banner.jpeg"); }
+.webp .capabilitiesCap { background-image: url("/images/capabilities-banner.webp"); }
 #v-pills-tab { min-width: 23.3em; }
 #v-pills-tab .nav-link { background-color: rgba(216,226,231,0.35); text-align: left; color: var(--darkTeal);  font-weight: 500; }
 	#v-pills-tab .nav-link.active,
@@ -137,12 +137,12 @@ main ul li::before { display:inline-block;
 
 
 /* === CERTIFICATIONS === */
-.no-webp .certificationsCap { background-image: url("/images/placeholder.jpeg"); }
-.webp .certificationsCap { background-image: url("/images/placeholder.jpeg"); }
+.no-webp .certificationsCap { background-image: url("/images/certifications-banner.jpeg"); }
+.webp .certificationsCap { background-image: url("/images/certifications-banner.webp"); }
 
 /* === ABOUT US === */
-.no-webp .aboutCap { background-image: url("/images/placeholder.jpeg"); }
-.webp .aboutCap { background-image: url("/images/placeholder.jpeg"); }
+.no-webp .aboutCap { background-image: url("/images/about-banner.jpeg"); }
+.webp .aboutCap { background-image: url("/images/about-banner.webp"); }
 .aboutmvp { background-color: #03465b; }
 .amvpeach { background-color: #013647; padding: 2.1em 1.85em 1.4em; }
 .amvIcon { fill: var(--orangecta); max-width: 90px; }
@@ -156,14 +156,11 @@ main ul li::before { display:inline-block;
 .aboutStaff { position: relative; display: grid; text-decoration: none; background-position: center center; background-size: cover; aspect-ratio: 1; align-content: space-between; transition:all 0.2s ease; background-color: rgb( 3 70 91 / 0 ); }
 .aboutStaff:hover { background-color: rgb( 3 70 91 / .75 ); background-blend-mode: darken; }
 
-.no-webp .aboutStaff1 { background-image: url("https://via.placeholder.com/500x500.jpg?text=Employee+1"); }
-.webp .aboutStaff1{ background-image: url("https://via.placeholder.com/500x500.webp?text=Employee+1"); }
-.no-webp .aboutStaff2 { background-image: url("https://via.placeholder.com/500x500.jpg?text=Employee+2"); }
-.webp .aboutStaff2 { background-image: url("https://via.placeholder.com/500x500.webp?text=Employee+2"); }
-.no-webp .aboutStaff3 { background-image: url("https://via.placeholder.com/500x500.jpg?text=Employee+3"); }
-.webp .aboutStaff3 { background-image: url("https://via.placeholder.com/500x500.webp?text=Employee+3"); }
-.no-webp .aboutStaff4 { background-image: url("https://via.placeholder.com/500x500.jpg?text=Employee+4"); }
-.webp .aboutStaff4 { background-image: url("https://via.placeholder.com/500x500.webp?text=Employee+4"); }
+.aboutStaff1 { background-image: url("/images/Greg-Raudenbush.jpeg"); }
+.aboutStaff2 { background-image: url("/images/Mike-Evans.jpeg"); }
+.aboutStaff3 { background-image: url("/images/Andy-Oskam.jpeg"); }
+.aboutStaff4 { background-image: url("/images/Dan-Bailor.jpeg"); }
+.aboutStaff5 { background-image: url("https://via.placeholder.com/500x500.webp?text=Employee+4"); }
 
 .aboutStaffcta { text-align: right; opacity: 0; transition:all 0.3s ease; }
 	.aboutStaffcta h4 { color:#d8e2e7; font-size: 1.15em; font-weight: 600; }
@@ -175,29 +172,42 @@ main ul li::before { display:inline-block;
 .aboutStaff:hover > * { opacity: 1; }
 
 /* === FACILITIES === */
-.no-webp .facilitiesCap { background-image: url("/images/placeholder.jpeg"); }
-.webp .facilitiesCap { background-image: url("/images/placeholder.jpeg"); }
+.no-webp .facilitiesCap { background-image: url("/images/facilities-banner.jpeg"); }
+.webp .facilitiesCap { background-image: url("/images/facilities-banner.webp"); }
 
 /* === REQUEST A QUOTE === */
+.no-webp .raqCap { background-image: url("/images/raq-banner.jpeg"); }
+.webp .raqCap { background-image: url("/images/raq-banner.webp"); }
 .afRaQ h1 { font-size: 1.875em; color: #FFF; }
 .afRaQ p { color: #FFF; }
 .no-webp .afRaQ { background-image: url("/images/join-team-bg.jpeg"); }
 .webp .afRaQ { background-image: url("/images/join-team-bg.webp"); }
 
 /* === CONTACT US === */
-.no-webp .contactCap { background-image: url("/images/placeholder.jpeg"); }
-.webp .contactCap { background-image: url("/images/placeholder.jpeg"); }
+.no-webp .contactCap { background-image: url("/images/contact-banner.jpeg"); }
+.webp .contactCap { background-image: url("/images/contact-banner.webp"); }
 .contactWrapper h1 { font-size: 2.25em; }
 .contactUsMsg { font-size:1.25em; }
 .calloutHQ { background-color: rgba(216,226,231,0.45); }
 .contactWrapper h2 { font-size: 1.5em; }
 .chqContact { display:grid; grid-template-columns: auto auto; }
 
+/* === CAREERS === */
+.no-webp .careersCap { background-image: url("/images/careers-banner.jpeg"); }
+.webp .careersCap { background-image: url("/images/careers-banner.webp"); }
+.benefitsList { -webkit-column-count: 2; -webkit-column-gap: 2em; -moz-column-count: 2; -moz-column-gap: 2em; column-count: 2; column-gap: 2em; }
+.careersList { background-color: rgb(216 226 231 / 0.25); }
+.no-webp .afApplication { background-image: url("/images/careers-bg.jpeg"); }
+.webp .afApplication { background-image: url("/images/careers-bg.webp"); }
+.afApplication h1 { font-size: 1.875em; color: #FFF; }
+.afApplication p { color: #FFF; }
+
 /* === FOOTER === */
 footer#footer { background-color: var(--darkTeal); }
 .footerNISicon { fill:#d8e2e7; width: 2.2em; }
 .footerDoc { color: #FFF; }
-	.footerDoc a { color: #FFF; text-decoration: underline; font-weight: 500; }
+	.footerDoc a { color: #FFF; text-decoration: underline; font-weight: 500; transition: all 0.3s ease; }
+		.footerDoc a:hover { color: var(--footerHoverColor); }
 .footerLinkCol { text-align: right; }
 .footerLinks { margin: 0; padding: 0; list-style-type: none; display: inline-block; }
 	.footerLinks li { display: inline-block; margin-right: 1em;
@@ -208,7 +218,8 @@ footer#footer { background-color: var(--darkTeal); }
 		.footerLinks li:last-child { padding-right: 0; margin-right: 1.5em; border-right: none; }
 		.footerLinks li a { color: #FFF; text-decoration: none; transition: all 0.3s ease-out; }
 			.footerLinks li a:hover { color: var(--footerHoverColor); }
-.footerLI { fill:#d8e2e7; width: 2.1em; }
+.footerLI { fill:#d8e2e7; width: 2.1em; transition: all 0.3s ease; }
+	.footerLI:hover { fill:var(--footerHoverColor); }
 
 @media screen and (max-width:992px) {
 	.footerLinkCol,.footerDoc { text-align: center; }
