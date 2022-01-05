@@ -152,6 +152,7 @@ main ul li::before { display:inline-block;
 	.amvpeach h4, .amvpeach p { color: #FFF; }
 	.amvpeach h4 { font-size:1.125em; margin-top: 1em; margin-bottom: 1em; }
 	
+.aboutJoin { background-size: cover;  }
 .aboutJoin h1, .aboutJoin p { color: #FFF; }	
 .no-webp .aboutJoin { background-image: url("/images/join-team-bg.jpeg"); }
 .webp .aboutJoin{ background-image: url("/images/join-team-bg.webp"); }
@@ -187,6 +188,7 @@ main ul li::before { display:inline-block;
 .afRaQ p { color: #FFF; }
 .no-webp .afRaQ { background-image: url("/images/join-team-bg.jpeg"); }
 .webp .afRaQ { background-image: url("/images/join-team-bg.webp"); }
+.raqFormTitles { font-size: 1.125em; font-weight: 500; }
 
 /* === CONTACT US === */
 .no-webp .contactCap { background-image: url("/images/contact-banner.jpeg"); }
