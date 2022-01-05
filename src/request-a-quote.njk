@@ -23,42 +23,42 @@ layout: 'base.njk'
   <div class="row">
     <div class="col-md-10 offset-md-1">
       <h2>Let's start your customized quote.</h2>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" id="formnis" data-netlify="true">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 pe-md-5">
             <h4>Tell us a bit about you:</h4>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-floating mb-3">
-                  <input class="form-control" id="fiFirstName" type="text" name="firstname" placeholder="First Name" />
+                  <input class="form-control" id="fiFirstName" type="text" name="firstname" placeholder="First Name" required />
                   <label for="fiFirstName">First Name</label>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-floating mb-3">
-                  <input class="form-control" id="fiLastName" type="text" name="lastname" placeholder="Last Name" />
+                  <input class="form-control" id="fiLastName" type="text" name="lastname" placeholder="Last Name" required />
                 <label for="fiLastName">Last Name</label>
                 </div>
               </div>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="fiEmail" placeholder="Email Address">
+              <input type="email" class="form-control" id="fiEmail" placeholder="Email Address" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address">
               <label for="fiEmail">Email address</label>
             </div>
             <div class="form-floating mb-3">
-              <input class="form-control" id="fiPhone" type="tel" name="phone" placeholder="Phone" />
+              <input class="form-control" id="fiPhone" type="tel" name="phone" placeholder="Phone" required />
               <label for="fiPhone">Phone</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="fiCompanyName" placeholder="Company Name">
+              <input type="text" class="form-control" id="fiCompanyName" placeholder="Company Name" required />
               <label for="fiCompanyName">Company Name</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="fiYourTitle" placeholder="Your Title">
+              <input type="text" class="form-control" id="fiYourTitle" placeholder="Your Title" required />
               <label for="fiYourTitle">Your Title</label>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 ps-md-5">
             <h4>What services are you interested in:</h4>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="ficFoundry">
@@ -78,12 +78,12 @@ layout: 'base.njk'
             </div>
             
             
-            <div class="form-floating">
+            <div class="form-floating mt-3">
               <textarea class="form-control" placeholder="Please provide a few details about your project." id="fiMessage" style="height: 100px"></textarea>
               <label for="fiMessage">Please provide a few details about your project.</label>
             </div>
             
-            <p><button type="submit">Start Your Quote</button></p>
+            <p><button type="submit" class="btn btn-primary my-4">Start Your Quote</button></p>
           </div>
         </div>
         
