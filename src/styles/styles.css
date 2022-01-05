@@ -209,6 +209,10 @@ main ul li::before { display:inline-block;
 .afApplication h1 { font-size: 1.875em; color: #FFF; }
 .afApplication p { color: #FFF; }
 
+/* === PRIVACY POLICY === */
+.no-webp .privacyCap { background-image: url("/images/privacy-banner.jpeg"); }
+.webp .privacyCap { background-image: url("/images/privacy-banner.webp"); }
+
 /* === FOOTER === */
 footer#footer { background-color: var(--darkTeal); }
 .footerNISicon { fill:#d8e2e7; width: 2.2em; }
