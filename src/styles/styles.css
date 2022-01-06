@@ -20,9 +20,25 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 
 .navbar-nav .nav-item .btn { padding:0.5em 2em; }
 
+.navbar-light .navbar-toggler { background-color: #FFF; }
+
+@media screen and (max-width:992px) {
+	.navbar-nav { background-color: #FFF; }
+	.navbar-nav .nav-item.active a { border-bottom: none; }
+	.navbar-nav .nav-item a { color: var(--darkTeal); font-weight: 500; display: block; }
+	.nav-item .btn-primary.btnondark { padding: 4px 0; background: none; border: none; font-size: inherit; }
+	.nav-item .btnondark.btn-primary:hover {
+		color: var(--darkTeal);
+	}
+}
+
 .btn-primary { background-color: var(--orangecta); border-color: var(--orangecta); border-width: 2px; }
-.btn-primary:hover { background-color: rgba(255,255,255,0); border-color: var(--orangecta); color: var(--orangecta); }
+.btn-primary:hover,
+.btn-check:focus+.btn-primary, 
+.btn-primary:focus { background-color: rgba(255,255,255,0); border-color: var(--orangecta); color: var(--orangecta); box-shadow: none; }
 .btnondark.btn-primary:hover { color: #FFF; }
+
+
 
 .mainSep { background-color: var(--orangecta); opacity: 1; }
 
@@ -64,7 +80,11 @@ main ul li::before { display:inline-block;
 .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) { padding-top:1rem; }
 
 .form-floating>.form-select { padding-top: 1rem; }
-
+.form-check-input:checked {
+	background-color: var(--darkTeal);
+	border-color: var(--darkTeal);
+}
+.form-check-input:focus { box-shadow: none; }
 .btn { padding: 0.5rem 1.45rem; font-weight: 500; font-size: 1.125rem; }
 
 /* === HOME === */
@@ -136,6 +156,10 @@ main ul li::before { display:inline-block;
 	.capsItemsdt { display: block; }
 	.capsItemsm { display: none; }
 }
+
+.accordion-button { background-color: rgba(216,226,231,0.35); color: var(--darkTeal); font-weight: 500; }
+.accordion-button:not(.collapsed) { background-color: var(--orangecta); box-shadow:none; color: #fff; }
+.accordion-button:not(.collapsed)::after { background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
 
 
 

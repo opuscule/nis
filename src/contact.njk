@@ -1,8 +1,9 @@
 ---
-titleTag: Contact PRL Industries
+titleTag: Call, Email, or Visit PRL Industries in Pennsylvania - Contact Us
 pageName: Contact
-description: PRL, Inc.
+description: Contact our Main Office in Cornwall, PA. via our form or phone number. 
 pageClass: contactCap
+pageSlug: contact/
 layout: 'base.njk'
 ---
 
@@ -22,17 +23,20 @@ layout: 'base.njk'
     </div>
     <div class="col-md-6 ps-md-5">
       <h2 class="mb-4">Have a question? Send us an email.</h2>
-      <form name="contact" method="POST" data-netlify="true" id="formnis">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="caught-field" id="formnis">
+        <p class="d-none">
+          <label>Don't fill this out if you are human: <input name="caught-field" /></label>
+        </p>
         <div class="row">
           <div class="col-sm-6">
             <div class="form-floating mb-3">
-              <input class="form-control" id="fiFirstName" type="text" name="firstname" placeholder="First Name" required />
+              <input class="form-control" id="fiFirstName" type="text" name="firstname" placeholder="First Name" data-rule-required="true" data-msg-required="Please enter your first name"/>
               <label for="fiFirstName">First Name</label>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="form-floating mb-3">
-              <input class="form-control" id="fiLastName" type="text" name="lastname" placeholder="Last Name" required />
+              <input class="form-control" id="fiLastName" type="text" name="lastname" placeholder="Last Name" data-rule-required="true" data-msg-required="Please enter your last name" />
             <label for="fiLastName">Last Name</label>
             </div>
           </div>
@@ -42,14 +46,14 @@ layout: 'base.njk'
            <label for="fiEmail">Email address</label>
          </div>
         <div class="form-floating mb-3">
-            <input class="form-control" id="fiPhone" type="tel" name="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required  >
+            <input class="form-control" id="fiPhone" type="tel" name="phone" data-rule-required="true" placeholder="Phone" data-msg-required="Please enter your phone number">
           <label for="fiPhone">Phone</label>
         </div>
         
         <div class="form-floating mb-3">
             
-            <select class="form-select" id="floatingSelect" aria-label="Select your Service Inquiry">
-              <option selected disabled>&mdash;</option>
+            <select class="form-select" name="inquirytype" id="floatingSelect" aria-label="Select your Service Inquiry" size="1" >
+              <option value="" selected disabled>&mdash;</option>
               <option value="General Inquiry">General Inquiry</option>
               <option value="Careers & Benefits">Careers &amp; Benefits</option>
               <option value="Customer Service">Customer Service</option>
@@ -58,7 +62,7 @@ layout: 'base.njk'
         </div>
 
             <div class="form-floating">
-              <textarea class="form-control" placeholder="Your message" id="fiMessage" style="height: 100px"></textarea>
+              <textarea class="form-control" name="message" placeholder="Your message" id="fiMessage" style="height: 8em" required></textarea>
               <label for="fiMessage">Your message</label>
         </div>
 

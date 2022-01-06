@@ -1,4 +1,11 @@
-$( "#formnis" ).validate();
+$( "#formnis" ).validate({
+    rules: {
+      inquirytype: {
+        required: true
+      }
+    }
+});
+
 
 
 /*! modernizr 3.6.0 (Custom Build) | MIT *

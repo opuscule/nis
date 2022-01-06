@@ -13,7 +13,7 @@
 
   <meta property="og:title" content="{{ titleTag }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:url" content="https://www.prlinc.com/{{ pageSlug }}">
   <meta property="og:description" content="{{description}}">
   <meta property="og:image" content="image.png">
 
@@ -36,7 +36,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navtoCollapse">
-            <ul class="nav justify-content-end align-items-center navbar-nav">
+            <ul class="nav justify-content-end align-items-center navbar-nav py-3 py-lg-0">
               <li class="nav-item mx-lg-4 {{ 'active' if '/capabilities' in page.url }}"><a href="/capabilities/">Capabilities</a></li>
               <li class="nav-item mx-lg-4 {{ 'active' if '/facilities' in page.url }}"><a href="/facilities/">Facilities</a></li>
               <li class="nav-item mx-lg-4 {{ 'active' if '/certifications' in page.url }}"><a href="/certifications/">Certifications</a></li>
