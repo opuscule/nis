@@ -20,7 +20,8 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 
 .navbar-nav .nav-item .btn { padding:0.5em 2em; }
 
-.navbar-light .navbar-toggler { background-color: #FFF; }
+.navbar-dark .navbar-toggler { color: #FFF; background-color: var(--orangecta); }
+.navbar-toggler:focus { box-shadow:none; }
 
 @media screen and (max-width:992px) {
 	.navbar-nav { background-color: #FFF; }
@@ -102,10 +103,6 @@ main ul li::before { display:inline-block;
 	.tceContent h2 { font-size: 2.25em; color: #fff; font-weight: 500; }
 	.tceContent h5 { color: #c6c6c6; font-size: 1.12em;font-weight: 900; }
 	.tceContent p { color: #fff; }
-	
-@media screen and (max-width:768px) {
-	.twoColE { grid-template-columns: auto; grid-template-rows: 45vh auto; }
-}
 
 .homeNISicon { fill:rgba(209,209,209,0.75); max-width: 4.25em; display: block; margin-right: 0.7em; margin-left: auto; }
 .hbct { color: rgba(255,255,255,0.75); font-weight: 700; font-size: 1.25em; background-color: rgba(3,70,91,0.85); display: inline-block; margin: 0; border-top:8px solid var(--orangecta); }
@@ -120,7 +117,12 @@ main ul li::before { display:inline-block;
 .homeCerts p { line-height: 1.25; font-size: 0.9em; }
 
 .contentLeadIn h1 { font-size: 2.25em; }
-
+@media screen and (max-width:768px) {
+	.twoColE { grid-template-columns: auto; grid-template-rows: 45vh auto; }
+	.hbct { display: block; }
+	.homeBannerCallout h3 { text-align: center; }
+	.homeNISicon { max-width: 3em; margin:auto; }
+}
 /* === CAPABILITIES === */
 .no-webp .capabilitiesCap { background-image: url("/images/capabilities-banner.jpeg"); }
 .webp .capabilitiesCap { background-image: url("/images/capabilities-banner.webp"); }
@@ -148,13 +150,19 @@ main ul li::before { display:inline-block;
 }
 
 .capCallout { background-color: rgba(216,226,231,0.45); }
-.capCalloutIcon { width: 8em; fill:#f2663e; }
+	.capCallout h2 { font-size: 1.5em; }
+	.capCallout > .row { align-items: center; }
+	.capCallout p a { color: var(--orangecta); }
+.capCalloutIcon { width: 8em; fill:#f2663e; display: block; }
 
 .capsItemsdt { display: none; }
 .capsItemsm { display: block; }
 @media (min-width:768px) {
 	.capsItemsdt { display: block; }
 	.capsItemsm { display: none; }
+}
+@media (max-width:768px) {
+	.capCallout h2, .capCallout p { text-align: center; }
 }
 
 .accordion-button { background-color: rgba(216,226,231,0.35); color: var(--darkTeal); font-weight: 500; }
@@ -166,6 +174,8 @@ main ul li::before { display:inline-block;
 /* === CERTIFICATIONS === */
 .no-webp .certificationsCap { background-image: url("/images/certifications-banner.jpeg"); }
 .webp .certificationsCap { background-image: url("/images/certifications-banner.webp"); }
+.certLists a { color: var(--darkTeal); font-weight: 500; text-decoration: none; }
+.certLists h4 { font-weight: 600; font-size: 1.125em; }
 
 /* === ABOUT US === */
 .no-webp .aboutCap { background-image: url("/images/about-banner.jpeg"); }
@@ -204,14 +214,15 @@ main ul li::before { display:inline-block;
 /* === FACILITIES === */
 .no-webp .facilitiesCap { background-image: url("/images/facilities-banner.jpeg"); }
 .webp .facilitiesCap { background-image: url("/images/facilities-banner.webp"); }
+.facilityInfo h2 { font-size: 1.5em; }
 
 /* === REQUEST A QUOTE === */
 .no-webp .raqCap { background-image: url("/images/raq-banner.jpeg"); }
 .webp .raqCap { background-image: url("/images/raq-banner.webp"); }
 .afRaQ h1 { font-size: 1.875em; color: #FFF; }
 .afRaQ p { color: #FFF; }
-.no-webp .afRaQ { background-image: url("/images/join-team-bg.jpeg"); }
-.webp .afRaQ { background-image: url("/images/join-team-bg.webp"); }
+.no-webp .afRaQ { background-image: url("/images/request-a-quote-bg.jpeg"); background-size: cover; }
+.webp .afRaQ { background-image: url("/images/request-a-quote-bg.webp"); background-size: cover; }
 .raqFormTitles { font-size: 1.125em; font-weight: 500; }
 
 /* === CONTACT US === */
@@ -240,10 +251,10 @@ main ul li::before { display:inline-block;
 /* === FOOTER === */
 footer#footer { background-color: var(--darkTeal); }
 .footerNISicon { fill:#d8e2e7; width: 2.2em; }
-.footerDoc { color: #FFF; }
+.footerDoc { color: #FFF; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; }
 	.footerDoc a { color: #FFF; text-decoration: underline; font-weight: 500; transition: all 0.3s ease; }
 		.footerDoc a:hover { color: var(--footerHoverColor); }
-.footerLinkCol { text-align: right; }
+.footerLinkCol { text-align: right; display: flex; align-items: center; flex-direction: row; justify-content: flex-end; flex-wrap: nowrap; align-content: center; }
 .footerLinks { margin: 0; padding: 0; list-style-type: none; display: inline-block; }
 	.footerLinks li { display: inline-block; margin-right: 1em;
 		position: relative;
@@ -255,7 +266,14 @@ footer#footer { background-color: var(--darkTeal); }
 			.footerLinks li a:hover { color: var(--footerHoverColor); }
 .footerLI { fill:#d8e2e7; width: 2.1em; transition: all 0.3s ease; }
 	.footerLI:hover { fill:var(--footerHoverColor); }
-
+.footerConnectM, .footercrM { display: none; }
 @media screen and (max-width:992px) {
-	.footerLinkCol,.footerDoc { text-align: center; }
+
+	.footerLinks { display: block; margin-bottom:1em; }
+	.footerLinkCol { display: block; text-align: center; }
+	.footerConnectM { display: inline-block; color: #FFF; }
+	.footerDoc { text-align: left; display:grid; grid-template-columns: auto 1fr; grid-template-rows: 1fr; }
+		.footerDoc > div { font-size: 0.9em; line-height: 1.2; }
+	.footerNISicon { grid-column: 1 / 2; }
+	.footercrM { display:contents; }
 }
