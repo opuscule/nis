@@ -155,8 +155,12 @@ main ul li::before { display:inline-block;
 .capCallout { background-color: rgba(216,226,231,0.45); }
 	.capCallout h2 { font-size: 1.5em; }
 	.capCallout > .row { align-items: center; }
-	.capCallout p a { color: var(--orangecta); }
+	.capCallout p a { color: var(--darkTeal); font-weight: 500; text-decoration: none; transition: all 0.25s ease; }
+	.capCallout p a:hover { text-decoration: underline; color: var(--orangecta); }
 .capCalloutIcon { width: 8em; fill:#f2663e; display: block; }
+
+
+
 
 .capsItemsdt { display: none; }
 .capsItemsm { display: block; }
@@ -177,7 +181,8 @@ main ul li::before { display:inline-block;
 /* === CERTIFICATIONS === */
 .no-webp .certificationsCap { background-image: url("/images/certifications-banner.jpeg"); }
 .webp .certificationsCap { background-image: url("/images/certifications-banner.webp"); }
-.certLists a { color: var(--darkTeal); font-weight: 500; text-decoration: none; }
+.certLists a{ color: var(--darkTeal); font-weight: 500; text-decoration: none; transition: all 0.25s ease; }
+	.certLists a:hover { text-decoration: underline; color: var(--orangecta); }
 .certLists h4 { font-weight: 600; font-size: 1.125em; }
 
 /* === ABOUT US === */
