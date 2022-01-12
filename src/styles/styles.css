@@ -246,6 +246,8 @@ main ul li::before { display:inline-block;
 .careersList { background-color: rgb(216 226 231 / 0.25); }
 .no-webp .afApplication { background-image: url("/images/careers-bg.jpeg"); }
 .webp .afApplication { background-image: url("/images/careers-bg.webp"); }
+
+.opbtn { display: inline-grid; grid-template-columns: auto 1em; column-gap: 0.8em; align-items: center; }
 .afApplication h1 { font-size: 1.875em; color: #FFF; }
 .afApplication p { color: #FFF; }
 
