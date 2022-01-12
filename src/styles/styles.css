@@ -13,7 +13,6 @@ h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; co
 
 .topNav { background-size: cover; background-position: center center; min-height: 50vh; border-bottom: 1em solid var(--darkTeal); }
 .navbar-brand img { filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); }
-.homeCap { background-image: url('/images/placeholder-landscape.jpg'); }
 
 .navbar-nav .nav-item a { color: #FFF; text-decoration: none; padding: 4px 0; }
 .navbar-nav .nav-item.active a { border-bottom: 3px solid var(--orangecta); color: var(--orangecta); }
@@ -116,12 +115,16 @@ main ul li::before { display:inline-block;
 .homeCerts img { max-width: 7.5em; margin-bottom: 1em; }
 .homeCerts p { line-height: 1.25; font-size: 0.9em; }
 
+.contentLeadIn { padding-top: 1.5em; }
 .contentLeadIn h1 { font-size: 2.25em; }
 @media screen and (max-width:768px) {
 	.twoColE { grid-template-columns: auto; grid-template-rows: 45vh auto; }
 	.hbct { display: block; }
 	.homeBannerCallout h3 { text-align: center; }
 	.homeNISicon { max-width: 3em; margin:auto; }
+	.no-webp .homeCap, .webp .homeCap { background-position: 84% 50%; }
+	.contentLeadIn { padding-top: 0.5em; }
+	.contentLeadIn h1 { font-size: 1.85em; }
 }
 /* === CAPABILITIES === */
 .no-webp .capabilitiesCap { background-image: url("/images/capabilities-banner.jpeg"); }
@@ -187,9 +190,11 @@ main ul li::before { display:inline-block;
 	.amvpeach h4 { font-size:1.125em; margin-top: 1em; margin-bottom: 1em; }
 	
 .aboutJoin { background-size: cover;  }
-.aboutJoin h1, .aboutJoin p { color: #FFF; }	
+.aboutJoin h1 { color: #FFF; font-size: 1.875em; }	
+.aboutJoin p { color: #FFF; }	
 .no-webp .aboutJoin { background-image: url("/images/join-team-bg.jpeg"); }
-.webp .aboutJoin{ background-image: url("/images/join-team-bg.webp"); }
+.no-webp .aboutJoin{ background-image: url("/images/careers-bg.jpeg"); }
+.webp .aboutJoin{ background-image: url("/images/careers-bg.webp"); }
 
 .aboutStaff { position: relative; display: grid; text-decoration: none; background-position: center center; background-size: cover; aspect-ratio: 1; align-content: space-between; transition:all 0.2s ease; background-color: rgb( 3 70 91 / 0 ); }
 .aboutStaff:hover { background-color: rgb( 3 70 91 / .75 ); background-blend-mode: darken; }
@@ -269,7 +274,8 @@ footer#footer { background-color: var(--darkTeal); }
 .footerConnectM, .footercrM { display: none; }
 @media screen and (max-width:992px) {
 
-	.footerLinks { display: block; margin-bottom:1em; }
+	.footerLinks { display: block; margin-bottom:1em; text-align: center; }
+	.footerLinks li:last-child { margin-right: 0; }
 	.footerLinkCol { display: block; text-align: center; }
 	.footerConnectM { display: inline-block; color: #FFF; }
 	.footerDoc { text-align: left; display:grid; grid-template-columns: auto 1fr; grid-template-rows: 1fr; }
