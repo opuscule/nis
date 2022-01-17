@@ -9,13 +9,17 @@ body,h1, h2, h3, h4, h5, h6, p, ul, ol, li { font-family: 'Manrope', sans-serif;
 
 h1, h2, h3, h4, h5, h6 { color: var(--darkTeal); }
 
-h5.subTitle { font-size: 1.12em; font-weight: 900; text-transform: uppercase; color: #8d8d8d; }
+h5.subTitle { font-size: 1.05em; font-weight: 900; text-transform: uppercase; color: #8d8d8d; }
+
+.skip-link { background: #319795; color: #fff; font-weight: 700; left: 50%; padding: 4px; position: absolute; transform: translateY(-100%); }
+.skip-link:focus { transform: translateY(0%); }
 
 .topNav { background-size: cover; background-position: center center; min-height: 50vh; border-bottom: 1em solid var(--darkTeal); }
-.navbar-brand img { filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); }
+.navbar-brand img { filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); width: 90%;  }
 
-.navbar-nav .nav-item a { color: #FFF; text-decoration: none; padding: 4px 0; }
+.navbar-nav .nav-item a { color: #FFF; text-decoration: none; padding: 4px 0; transition: all 0.25s ease; }
 .navbar-nav .nav-item.active a { border-bottom: 3px solid var(--orangecta); color: var(--orangecta); }
+.navbar-nav .nav-item a:hover { color: var(--orangecta); }
 
 .navbar-nav .nav-item .btn { padding:0.5em 2em; }
 
@@ -107,7 +111,8 @@ main ul li::before { display:inline-block;
 .hbct { color: rgba(255,255,255,0.75); font-weight: 700; font-size: 1.25em; background-color: rgba(3,70,91,0.85); display: inline-block; margin: 0; border-top:8px solid var(--orangecta); }
 .homeBannerCallout { background-color: rgba(3,70,91,0.85); }
 	.homeBannerCallout h3 { color: #FFF; font-size: 1.18em; line-height: 1.6; }
-		.homeBannerCallout h3 a { color: #FFF; }
+		.homeBannerCallout h3 a { color: #FFF; transition: all 0.25s ease; }
+			.homeBannerCallout h3 a:hover { color: var(--footerHoverColor); }
 .liteCallout { background-color: rgba(216,226,231,0.25); padding: 2em 2em 1.4em 2em; }
 .liteCallout svg { fill:var(--orangecta); max-width: 6.25em; }
 .liteCallout h3 { font-size: 1.125em; color: var(--darkTeal); font-weight: 700; }
@@ -231,6 +236,8 @@ main ul li::before { display:inline-block;
 .webp .raqCap { background-image: url("/images/raq-banner.webp"); }
 .afRaQ h1 { font-size: 1.875em; color: #FFF; }
 .afRaQ p { color: #FFF; }
+.lsycq { font-size: 1.75em; }
+
 .no-webp .afRaQ { background-image: url("/images/request-a-quote-bg.jpeg"); background-size: cover; }
 .webp .afRaQ { background-image: url("/images/request-a-quote-bg.webp"); background-size: cover; }
 .raqFormTitles { font-size: 1.125em; font-weight: 500; }
