@@ -11,6 +11,9 @@ h1, h2, h3, h4, h5, h6 { color: var(--darkTeal); }
 
 h5.subTitle { font-size: 1.05em; font-weight: 900; text-transform: uppercase; color: #8d8d8d; }
 
+@media (min-width: 1200px) {
+	.h1, h1 { font-size: 2.25rem; }
+}
 .skip-link { background: #319795; color: #fff; font-weight: 700; left: 50%; padding: 4px; position: absolute; transform: translateY(-100%); }
 .skip-link:focus { transform: translateY(0%); }
 
@@ -96,14 +99,12 @@ main ul li::before { display:inline-block;
 .no-webp .homeCap { background-image: url("/images/home-banner.jpeg"); }
 .webp .homeCap { background-image: url("/images/home-banner.webp"); }
 
-.homeLeadIn h1 { font-size: 2.25em; font-weight: 500; }
-
 .twoColE { display: grid; grid-template-columns: 1fr 1fr; }
 .no-webp .tceImg { background-image: url("/images/home-about.jpeg"); }
 .webp .tceImg { background-image: url("/images/home-about.webp"); }
 .tceImg { background-size: cover; background-position: center center; }
-.tceContent { background-color: var(--darkTeal); padding: 4em 12%; }
-	.tceContent h2 { font-size: 2.25em; color: #fff; font-weight: 500; }
+.tceContent { background-color: var(--darkTeal); padding: 5em 12%; }
+	.tceContent h1 { color: #fff; }
 	.tceContent h5 { color: #c6c6c6; font-size: 1.12em;font-weight: 900; }
 	.tceContent p { color: #fff; }
 
@@ -121,7 +122,6 @@ main ul li::before { display:inline-block;
 .homeCerts p { line-height: 1.25; font-size: 0.9em; }
 
 .contentLeadIn { padding-top: 1.5em; }
-.contentLeadIn h1 { font-size: 2.25em; }
 @media screen and (max-width:768px) {
 	.twoColE { grid-template-columns: auto; grid-template-rows: 45vh auto; }
 	.hbct { display: block; }
@@ -229,12 +229,11 @@ main ul li::before { display:inline-block;
 /* === FACILITIES === */
 .no-webp .facilitiesCap { background-image: url("/images/facilities-banner.jpeg"); }
 .webp .facilitiesCap { background-image: url("/images/facilities-banner.webp"); }
-.facilityInfo h2 { font-size: 1.5em; }
 
 /* === REQUEST A QUOTE === */
 .no-webp .raqCap { background-image: url("/images/raq-banner.jpeg"); }
 .webp .raqCap { background-image: url("/images/raq-banner.webp"); }
-.afRaQ h1 { font-size: 1.875em; color: #FFF; }
+.afRaQ h1 { color: #FFF; }
 .afRaQ p { color: #FFF; }
 .lsycq { font-size: 1.75em; }
 
@@ -245,7 +244,6 @@ main ul li::before { display:inline-block;
 /* === CONTACT US === */
 .no-webp .contactCap { background-image: url("/images/contact-banner.jpeg"); }
 .webp .contactCap { background-image: url("/images/contact-banner.webp"); }
-.contactWrapper h1 { font-size: 2.25em; }
 .contactUsMsg { font-size:1.25em; }
 .calloutHQ { background-color: rgba(216,226,231,0.45); }
 .contactWrapper h2 { font-size: 1.5em; }
@@ -260,8 +258,7 @@ main ul li::before { display:inline-block;
 .webp .afApplication { background-image: url("/images/careers-bg.webp"); }
 
 .opbtn { display: inline-grid; grid-template-columns: auto 1em; column-gap: 0.8em; align-items: center; }
-.afApplication h1 { font-size: 1.875em; color: #FFF; }
-.afApplication p { color: #FFF; }
+.afApplication h1, .afApplication p { color: #FFF; }
 
 /* === PRIVACY POLICY === */
 .no-webp .privacyCap { background-image: url("/images/privacy-banner.jpeg"); }
