@@ -93,6 +93,7 @@ main ul li::before { display:inline-block;
 }
 .form-check-input:focus { box-shadow: none; }
 .btn { padding: 0.5rem 1.45rem; font-weight: 500; font-size: 1.125rem; }
+legend { float: none; font-size: inherit; }
 
 /* === HOME === */
 .topNav.homeCap { border-bottom: none; min-height: 100vh; display: grid; align-content: space-between; }
