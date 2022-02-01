@@ -116,23 +116,24 @@
         document.body.className += 'no-webp';
       }
     });
+  
     
-    document
-      .querySelector("form")
-      .addEventListener("submit", handleSubmit);
-    
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      let myForm = document.getElementById("formnis");
-      let formData = new FormData(myForm);
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
+    var contactForm = document.querySelector('#formnis')
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault()
+      var XHR = new XMLHttpRequest()
+      var formData = new FormData(contactForm)
+      XHR.addEventListener('load', function() {
+        /* submitted */
+        console.log("Form successfully submitted");
       })
-        .then(() => console.log("Form successfully submitted"))
-        .catch((error) => alert(error));
-    };
+      XHR.addEventListener('error', function() {
+       /* error */
+       console.log("ERROR");
+      })
+      XHR.open('POST', '#')
+      XHR.send(formData)
+    })
     
   </script>
 </body>
