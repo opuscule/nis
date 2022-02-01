@@ -126,10 +126,13 @@
       XHR.addEventListener('load', function() {
         /* submitted */
         console.log("Form successfully submitted");
+        $('#formnis').slideUp();
+        $('.alert-success').fadeIn().addClass('d-flex');
       })
       XHR.addEventListener('error', function() {
        /* error */
        console.log("ERROR");
+       $('.alert-danger').fadeIn().addClass('d-flex');
       })
       XHR.open('POST', '#')
       XHR.send(formData)
