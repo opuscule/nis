@@ -210,13 +210,15 @@ legend { float: none; font-size: inherit; }
 .aboutStaff { position: relative; display: grid; text-decoration: none; background-position: center center; background-size: cover; aspect-ratio: 1; align-content: space-between; transition:all 0.2s ease; background-color: rgb( 3 70 91 / 0 ); }
 .aboutStaff:hover { background-color: rgb( 3 70 91 / .75 ); background-blend-mode: darken; }
 
-.aboutStaff1 { background-image: url("/images/Greg-Raudenbush.jpeg"); }
-.aboutStaff2 { background-image: url("/images/Mike-Evans.jpeg"); }
-.aboutStaff3 { background-image: url("/images/Andy-Oskam.jpeg"); }
-.aboutStaff4 { background-image: url("/images/Dan-Bailor.jpeg"); }
-.aboutStaff5 { background-image: url("/images/Rich-McKeever.jpeg"); }
-.aboutStaff6 { background-image: url("/images/Bryan-Snyder.jpeg"); }
-.aboutStaff7 { background-image: url("/images/Joel-Valigorsky.jpeg"); }
+.about-greg-r { background-image: url("/images/Greg-Raudenbush.jpg"); }
+.about-mike-e { background-image: url("/images/Mike-Evans.jpg"); }
+.about-andy-o { background-image: url("/images/Andy-Oskam.jpg"); }
+.about-dan-b { background-image: url("/images/Dan-Bailor.jpg"); }
+.about-rich-m { background-image: url("/images/Rich-McKeever.jpg"); }
+.about-bryan-s { background-image: url("/images/Bryan-Snyder.jpg"); }
+.about-joel-v { background-image: url("/images/Joel-Valigorsky.jpg"); }
+.about-shannon-r { background-image: url("/images/Shannon-Ream.jpg"); }
+.about-leigh-z { background-image: url("/images/Leigh-Zerbe.jpg"); }
 
 .aboutStaffcta { text-align: right; opacity: 0; transition:all 0.3s ease; }
 	.aboutStaffcta h4 { color:#d8e2e7; font-size: 1.15em; font-weight: 600; }
