@@ -216,9 +216,14 @@ legend { float: none; font-size: inherit; }
 .about-dan-b { background-image: url("/images/Dan-Bailor.jpg"); }
 .about-rich-m { background-image: url("/images/Rich-McKeever.jpg"); }
 .about-bryan-s { background-image: url("/images/Bryan-Snyder.jpg"); }
-.about-joel-v { background-image: url("/images/Joel-Valigorsky.jpg"); }
+.about-nichole-m { background-image: url("/images/Nichole-Moore.jpg"); }
 .about-shannon-r { background-image: url("/images/Shannon-Ream.jpg"); }
 .about-leigh-z { background-image: url("/images/Leigh-Zerbe.jpg"); }
+
+.modal-body blockquote {margin-left: 1rem;
+	border-left: 3px solid var(--orangecta);
+	padding-left: 1rem;
+	font-style: italic;}
 
 .aboutStaffcta { text-align: right; opacity: 0; transition:all 0.3s ease; }
 	.aboutStaffcta h4 { color:#d8e2e7; font-size: 1.15em; font-weight: 600; }
