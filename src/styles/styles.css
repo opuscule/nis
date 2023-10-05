@@ -210,15 +210,13 @@ legend { float: none; font-size: inherit; }
 .aboutStaff { position: relative; display: grid; text-decoration: none; background-position: center center; background-size: cover; aspect-ratio: 1; align-content: space-between; transition:all 0.2s ease; background-color: rgb( 3 70 91 / 0 ); }
 .aboutStaff:hover { background-color: rgb( 3 70 91 / .75 ); background-blend-mode: darken; }
 
-.about-greg-r { background-image: url("/images/Greg-Raudenbush.jpg"); }
-.about-mike-e { background-image: url("/images/Mike-Evans.jpg"); }
 .about-andy-o { background-image: url("/images/Andy-Oskam.jpg"); }
-.about-dan-b { background-image: url("/images/Dan-Bailor.jpg"); }
 .about-rich-m { background-image: url("/images/Rich-McKeever.jpg"); }
-.about-bryan-s { background-image: url("/images/Bryan-Snyder.jpg"); }
-.about-nichole-m { background-image: url("/images/Nichole-Moore.jpg"); }
+.about-nichole-m { background-image: url("/images/nichole-moore.webp"); }
 .about-shannon-r { background-image: url("/images/Shannon-Ream.jpg"); }
-.about-tim-l { background-image: url("/images/tim-lewis-prl.jpg"); }
+.about-tim-l { background-image: url("/images/tim-lewis.webp"); }
+.about-jake-s { background-image: url("/images/jake-schommer.webp"); }
+.about-don-t { background-image: url("/images/don-tomich.webp"); }
 
 .modal-body blockquote {margin-left: 1rem;
 	border-left: 3px solid var(--orangecta);
