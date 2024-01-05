@@ -217,6 +217,7 @@ legend { float: none; font-size: inherit; }
 .about-tim-l { background-image: url("/images/tim-lewis.webp"); }
 .about-jake-s { background-image: url("/images/jake-schommer.webp"); }
 .about-don-t { background-image: url("/images/don-tomich.webp"); }
+.about-matt-t { background-image: url("/images/matt-troutman.webp"); }
 
 .modal-body blockquote {margin-left: 1rem;
 	border-left: 3px solid var(--orangecta);
